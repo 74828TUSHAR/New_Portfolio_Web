@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    {% block corecss %}
+    <link rel="stylesheet" href="{% static 'core/css/core.css' %}" />
+    {% endblock corecss %}
+
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>   
+    <header class="header">
+      <a href="#" class="logo">Portfolio</a>
+      <nav class="navbar">
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#services" style="--i: 3">Skill</a>
+        <a href="#skills" style="--i: 4">Portfolio</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+      </nav>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content" >
+        <h3>Hello,It's Me</h3>
+        <h1 class="font-weight-bold satisfy-regular">Tushar Raut</h1>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p>
+          a passionate developer with a strong foundation in various technical
+          skills and a knack for tackling challenges. Here's a glimpse into my
+          world:
+        </p>
+        <div class="home-sci">
+          <a href="#" style="--i: 7"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" style="--i: 8"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" style="--i: 9"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" style="--i: 10"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <a href="#about" class="btn-box">More About Me</a>
+             
+       <div style="position: absolute; top: 130px; right: 200px;">
+    <img src="{% static 'core/images/newimg.jpg' %} " alt="Your Image" style="width: 550px; height: auto; position: relative;">
+  </div>
+
+      </div>
+
+    </section>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="{% static 'core/images/newimg.jpg' %} " alt="" />
+      </div>
+      <div class="about-text">
+        <h2>About<span>Me</span></h2>
+        <h4>Full Stack Developer!</h4>
+        <p>
+          I can build robust backend
+        applications (Django, Spring Boot ) with user-friendly interfaces
+        (React.js, HTML, CSS). I leverage powerful databases (MySQL) and ensure
+        smooth deployment (Git, Amazon EC2 ,Pythonanywhere).
+          <p>
+        <b><u>Tech Enthusiast:</u></b> Beyond core languages (Python,Java,C++), I'm
+        well-versed in Object-Oriented Programming, Data Structures &
+        Algorithms, and explore other frameworks like Django etc.
+      <br>
+        <b><u>Lifelong Learner:</u></b> I'm always eager to learn new
+        technologies and collaborate effectively within a team.
+      </p>
+        </p>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+    </section>
+    <section>
+      <div class="services" id="services">
+        <div class="container" style="margin-left: 60px;">
+          <h1 class="sub-title">My <span>Services</span></h1>
+          <div class="services-list">
+            <div>
+             <i class="fa-solid fa-eye" style="color: #00eeff"></i>
+              <h2>Front-End Developer</h2>
+              <p>I bring websites to life by crafting beautiful and user-friendly interfaces (UIs) that are responsive and performant across all devices. I leverage modern front-end technologies (HTML, CSS, JavaScript,ReactJS) to create interactive and engaging web experiences, ensuring a smooth user journey.</p>
+              <a href="#" class="read">Learn More</a>
+            </div>
+            <div>
+            <i class="fa-brands fa-salesforce" style="color: #00eeff"></i>
+              <h2>Salesforce Developer</h2>
+              <p>As a Salesforce administrator, I'm enthusiastic about helping businesses take advantage of the platform's power. I can assist you with initial setup, user management, and basic automation to streamline your workflows. I'm a fast learner and committed to providing support as your team embraces Salesforce.</p>
+              <a href="#" class="read">Learn More</a>
+            </div>
+              <div>
+            <i class="fa-solid fa-leaf" style="color: #00eeff"></i>
+              <h2>Backend-End Developer</h2>
+              <p>I build the powerful engines that drive web applications. My back-end development expertise lies in creating robust and scalable systems using industry-standard frameworks (e.g., Django). I ensure secure data management with efficient databases (e.g., MySQL) and prioritize application performance for a seamless user experience.</p>
+              <a href="#" class="read">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h1 class="sub-title">My<span>Skills</span></h1>
+    <section>
+      <div class="container1" id="skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="Technical-bars">
+          <div class="bar">
+             <div class="bar"><i style="color: #00eaff;" class="fa-brands fa-java"></i>
+            <div class="info">
+              <span>Java</span>
+            </div>
+            <div class="progress-line Javascript">
+              <span></span>
+            </div>
+          </div>
+            <i style="color: #c95d2e;" class="fa-brands fa-html5"></i>
+            <div class="info">
+              <span>html</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+            <div class="bar"><i style="color: #147bbc;" class="fa-brands fa-css3-alt"></i>
+            <div class="info">
+              <span>css</span>
+            </div>
+            <div class="progress-line css">
+              <span></span>
+            </div>
+          </div>
+            <div class="bar"><i style="color: #b0bc1e;" class="fa-brands fa-square-js"></i>
+            <div class="info">
+              <span>Javascript</span>
+            </div>
+            <div class="progress-line Javascript">
+              <span></span>
+            </div>
+          </div>
+            <div class="bar"><i style="color: #c32ec9;" class="fa-brands fa-python"></i>
+            <div class="info">
+              <span>Python</span>
+            </div>
+            <div class="progress-line Python">
+              <span></span>
+            </div>
+          </div>
+            <div class="bar"><i style="color: #69bcbc;" class="fa-brands fa-react"></i>
+            <div class="info">
+              <span>ReactJS</span>
+            </div>
+            <div class="progress-line ReactJS">
+              <span></span>
+            </div>
+          </div>
+          
+             <div class="bar">
+            <i style="color: #7bff08;" class="fa-solid fa-database"></i>
+            <div class="info">
+              <span>MySQL</span>
+            </div>
+            <div class="progress-line html">
+              <span></span>
+            </div>
+          </div>
+           <div class="bar"><i style="color: #f860eb;" class="fa-brands fa-battle-net"></i>
+            <div class="info">
+              <span>Dot Net</span>
+            </div>
+            <div class="progress-line ReactJS">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container1">
+        <h1 class="heading1">
+          Professional Skills
+        </h1>
+        <div class="radial-bars">
+
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+              <div class="percentage">90%</div>
+              <div class="text">Problem Solving </div>
+          </div>
+          <div class="radial-bar">
+           <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+          </svg>
+              <div class="percentage">75%</div>
+              <div class="text">Creativity</div>
+          </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">80%</div>
+              <div class="text"> Communication</div>
+            </div>
+              <div class="radial-bar">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                  <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                  <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                </svg>
+                  <div class="percentage">89%</div>
+                  <div class="text">TeamWork</div>
+              </div>    
+        </div>
+      </div>
+    </section>
+    <section>
+      <div id="portfolio" id="project">
+        <div class="main-text" id="project">
+          <h2>Latest <span>Project</span></h2>
+          <div class="portfolio-content"style="gap:10px">
+            <div class="row">
+              <img src="{% static 'core/images/mychat.jpg' %}" alt="">
+              <div class="layer">
+                <h5>MyChat Application</h5>
+                <p>Developed a scalable group video calling application using the Django framework. Implemented real-time communication features, secure user authentication, and seamless video streaming. Enhanced user experience with an intuitive interface and robust backend services.</p>
+                <a href="https://applicationmychatapp.pythonanywhere.com"><i class="fa-solid fa-arrow-up-right-from-square" style="background: #0ef;"></i></a>
+              </div>
+            </div>
+             <div class="row">
+              <img src="{% static 'core/images/todolist.jpg' %}" alt="">
+              <div class="layer">
+                <h5>To Do List</h5>
+                <p>Built a dynamic To-Do List application using the Django framework. Implemented features for task creation, editing, and deletion, with a user-friendly interface and efficient backend services to manage user tasks and priorities.</p>
+                <a href="https://tcstusharraut.pythonanywhere.com"><i class="fa-solid fa-arrow-up-right-from-square" style=" background: #0ef;"></i></a>
+              </div>
+            </div>
+             <div class="row">
+              <img src="{% static 'core/images/savi2.jpg' %}" alt="">
+              <div class="layer">
+                <h5>Image Uploader Application</h5>
+                <p>Designed and developed an image uploader application using Django, facilitating seamless upload, storage, and management of images. Implemented features such as image resizing, user authentication, and secure storage, ensuring optimal performance and user satisfaction.</p>
+                <a href="https://tushrimguploader.pythonanywhere.com"><i class="fa-solid fa-arrow-up-right-from-square" style="background: #0ef;"></i></a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="portfolio-content" style="gap: 10px; margin-top: 10px;">
+            <div class="row" >
+              <img src="{% static 'core/images/resumeweb.jpg' %}" alt="">
+              <div class="layer">
+                <h5>Portfolio Website</h5>
+                <p>Created a professional portfolio website using Django framework to showcase projects, skills, and project. Implemented responsive design, integrated project galleries, and utilized Django templates for dynamic content management.</p>
+                <a href="https://tushar060199.pythonanywhere.com"><i class="fa-solid fa-arrow-up-right-from-square" style="background: #0ef;"></i></a>
+              </div>
+            </div>
+
+              <div class="row">
+              <img src="{% static 'core/images/165.jpg' %}" alt="">
+              <div class="layer">
+                <h5>Online Parking Management System</h5>
+                <p>Parking Management System (PMS) is designed to efficiently manage parking facilities. This system is particularly useful in environments such as shopping malls, office buildings, airports, and other locations with large parking areas. It is developed in Java(Spring Boot) for backend , MYSQL as a database management system and React-Js
+                   ,HTML , CSS as a frontend , Bootstrap for styling. Git is used for version controlling</p>
+                <a href="https://github.com/74828TUSHAR/Parking_Management_System"><i class="fa-solid fa-arrow-up-right-from-square" style="background: #0ef;"></i></a>
+              </div>
+            </div>
+             
+            <div class="row">
+              <img src="{% static 'core/images/1234.jpg' %}" alt="">
+              <div class="layer">
+                <h5>Ecommerce Website </h5>
+                <p>Designed and developed a fully functional ecommerce website using Django, incorporating essential features such as product catalog, shopping cart, secure checkout, and user profiles. Implemented responsive design principles for seamless browsing across devices, enhancing user accessibility and experience.</p>
+                <a href="https://github.com/74828TUSHAR/Ecommerce-website.git"><i class="fa-solid fa-arrow-up-right-from-square" style=" background: #0ef;"></i></a>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's Connect..!!!</h4>
+        <p> I'm always interested in collaborating on new projects, discussing
+      technical challenges, or simply connecting with fellow tech enthusiasts.
+      Feel free to reach out using the contact form below or through the links
+      provided.</p>
+        <div class="contact-list">
+          <li><i class="fa-solid fa-envelope" > </i>&nbsp;&nbsp;ertusharraut@gmail.com</li>
+          <li><i class="fa-solid fa-phone">  </i>&nbsp;&nbsp;8766822360</li>
+          <li><i class="fa-brands fa-github"></i><a href="https://github.com/74828TUSHAR">&nbsp;&nbsp; Git-Hub Repository</a></li>
+          <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/tushar-raut-56067a260/">&nbsp;&nbsp;LinkedIn</a></li>
+        </div>
+        <div class="contact-icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/tushar-raut-56067a260/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="" placeholder="Name" required>
+          <input type="email" placeholder="Enter Your Email" required>
+          <input type="" placeholder="Enter Your Subject" required>
+          <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+          <input type="submit" value="submit" class="send">
+        </form>
+      </div>
+    </section>
+    <div class="last-text">
+      <p>Developed with love by Tushar Raut © 2024</p>
+    </div>
+    <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+    <script src="{% static 'core/js/all.js' %}"></script>
+  </body>
+</html>
